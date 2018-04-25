@@ -7,9 +7,9 @@ using System.Windows.Forms;
 namespace WindowsFormsApp1
 {
 
-    public partial class Kalkulator : Form
+    public partial class Calculator : Form
     {
-        public Kalkulator()
+        public Calculator()
         {
             InitializeComponent();
         }
