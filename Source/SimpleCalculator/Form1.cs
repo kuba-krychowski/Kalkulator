@@ -1,10 +1,7 @@
-﻿
-
-
-using System;
+﻿using System;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace SimpleCalculator
 {
 
     public partial class Calculator : Form
