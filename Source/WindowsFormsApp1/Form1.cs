@@ -14,9 +14,9 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        string firstnumber, secondnumber;
+        string firstNumber, secondNumber;
 
-        char typeoperation = ' ';
+        char typeOperation = ' ';
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -75,49 +75,49 @@ namespace WindowsFormsApp1
 
         private void buttonDodawanie_Click(object sender, EventArgs e)
         {
-            typeoperation = '+';
+            typeOperation = '+';
             tbWynik.Text = " ";
 
         }
 
         private void buttonOdejmowanie_Click(object sender, EventArgs e)
         {
-            typeoperation = '-';
+            typeOperation = '-';
             tbWynik.Text = " ";
         }
 
         private void buttonMnozenie_Click(object sender, EventArgs e)
         {
-            typeoperation = '*';
+            typeOperation = '*';
             tbWynik.Text = " ";
         }
 
         private void buttonDzielenie_Click(object sender, EventArgs e)
         {
-            typeoperation = '/';
+            typeOperation = '/';
             tbWynik.Text = " ";
         }
 
         private void buttonWynik_Click(object sender, EventArgs e)
         {
-            switch (typeoperation)  { 
+            switch (typeOperation)  { 
                 case ('+'):
-                    tbWynik.Text = (int.Parse(firstnumber) + int.Parse(secondnumber)).ToString();
+                    tbWynik.Text = (int.Parse(firstNumber) + int.Parse(secondNumber)).ToString();
                     break;
                 case ('-'):
-                    tbWynik.Text = (int.Parse(firstnumber) - int.Parse(secondnumber)).ToString();
+                    tbWynik.Text = (int.Parse(firstNumber) - int.Parse(secondNumber)).ToString();
                     break;
                 case ('/'):
-                    tbWynik.Text = (int.Parse(firstnumber) / int.Parse(secondnumber)).ToString();
+                    tbWynik.Text = (int.Parse(firstNumber) / int.Parse(secondNumber)).ToString();
                     break;
                 case ('*'):
-                    tbWynik.Text = (int.Parse(firstnumber) * int.Parse(secondnumber)).ToString();
+                    tbWynik.Text = (int.Parse(firstNumber) * int.Parse(secondNumber)).ToString();
                     break;
 
              }
-           firstnumber = "";
-            secondnumber = "";
-            typeoperation = ' ';
+           firstNumber = "";
+            secondNumber = "";
+            typeOperation = ' ';
         }
         private void tbWynik_TextChanged(object sender, EventArgs e)
         {
@@ -125,15 +125,15 @@ namespace WindowsFormsApp1
         }
         private void action(int liczba)
         {
-             if(typeoperation == ' ')
+             if(typeOperation == ' ')
             {
-                firstnumber += liczba;
-                tbWynik.Text = firstnumber;
+                firstNumber += liczba;
+                tbWynik.Text = firstNumber;
             }
             else
             {
-                secondnumber += liczba;
-                tbWynik.Text = secondnumber;
+                secondNumber += liczba;
+                tbWynik.Text = secondNumber;
             }
         }      
     }    
