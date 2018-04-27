@@ -14,13 +14,13 @@ namespace SimpleCalculator.Tests
         {
             //arrange
             var firstNumber = 2;
-            var secondNumber = 3;
+            var secondNumber = 4;
 
             //act
             var result = firstNumber - secondNumber;
 
             //assert
-            Assert.AreEqual(-1, result);
+            Assert.AreEqual(-2, result);
         }
 
 
