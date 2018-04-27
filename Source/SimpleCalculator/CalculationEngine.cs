@@ -15,6 +15,10 @@ namespace SimpleCalculator
             {
                 return PerformAddition(mathematicalOperation);
             }
+            if (mathematicalOperation.Contains("-"))
+            {
+                return PerformAdditionn(mathematicalOperation);
+            }
             return int.Parse(mathematicalOperation);
         }
 
@@ -28,6 +32,20 @@ namespace SimpleCalculator
             var secondInt = int.Parse(secondArgument);
 
             return firstInt + secondInt;
+          
         }
+
+        private static int PerformAdditionn(string addition)
+        {
+            var firstArgument = addition.Substring(0, 1);
+            var secondArgument = addition.Substring(2, 1);
+
+            var firstInt = int.Parse(firstArgument);
+            var secondInt = int.Parse(secondArgument);
+
+            return firstInt - secondInt;
+
+        }
+
     }
 }

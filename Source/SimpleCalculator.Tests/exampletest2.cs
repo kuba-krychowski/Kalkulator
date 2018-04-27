@@ -7,22 +7,22 @@ using NUnit.Framework;
 
 namespace SimpleCalculator.Tests
 {
-    public class ExampleTests
+    public class ExampleTests2
     {
         [Test,]
-        public void can_add_two_numbers()
+        public void can_retract_two_numbers()
         {
             //arrange
             var firstNumber = 2;
             var secondNumber = 3;
 
             //act
-            var result = firstNumber + secondNumber;
+            var result = firstNumber - secondNumber;
 
             //assert
-            Assert.AreEqual(5, result);
+            Assert.AreEqual(-1, result);
         }
 
-      
+
     }
 }

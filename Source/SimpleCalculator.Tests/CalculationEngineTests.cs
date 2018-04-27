@@ -20,7 +20,7 @@ namespace SimpleCalculator.Tests
         {
             //act
             var result = CalculationEngine.Evaluate(operation);
-
+            
             //assert
             Assert.AreEqual(expectedResult, result);
         }
@@ -28,7 +28,7 @@ namespace SimpleCalculator.Tests
         [TestCase("1+2", 3)]
         [TestCase("2+5", 7)]
         [TestCase("111+222", 333)]
-        [TestCase("1-2", -1)]
+        [TestCase("3-2", 1)]
         [TestCase("2-5", -3)]
         [TestCase("111-222", -111)]
         public void can_add_two_numbers(
